@@ -1,0 +1,16 @@
+jcs dss create-bucket --bucket clibucket1
+jcs dss create-bucket --bucket clibucket2
+jcs dss list-buckets 
+jcs dss put-object --bucket clibucket1 --key myobj --body myobj
+jcs dss put-object --bucket clibucket2 --key myobj --body myobj
+jcs dss copy-object --copy-source clibucket1/myobj --key myobj --bucket clibucket2
+jcs dss get-object --bucket clibucket1 --key myobj
+jcs dss list-objects --bucket clibucket1
+jcs dss head-bucket --bucket clibucket1
+jcs dss head-object --bucket clibucket1 --key myobj
+jcs dss get-presigned-url --bucket clibucket1 --key myobj --expiry 1000
+jcs dss delete-object --bucket clibucket1 --key myobj
+jcs dss delete-object --bucket clibucket2 --key myobj
+jcs dss delete-bucket --bucket clibucket1
+jcs dss delete-bucket --bucket clibucket2
+
