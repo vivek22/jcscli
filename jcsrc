@@ -1,11 +1,5 @@
-#export IS_SECURE=False
-#export COMPUTE_URL=https://compute.ind-west-1.jiocloudservices.com
-#export VPC_URL=https://vpc.ind-west-1.jiocloudservices.com
-#export DSS_URL=https://dss.ind-west-1.jiocloudservices.com
-#export IAM_URL=http://127.0.0.1
-#export IAM_URL=https://iam.ind-west-1.jiocloudservices.com/
-export ACCESS_KEY=66840de373cf4b199d510bf82a230206
-export SECRET_KEY=861eb385eed04b9ebc1fc1eaf9ababb1
+export ACCESS_KEY=
+export SECRET_KEY=
 
 
 
